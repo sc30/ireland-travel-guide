@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱尔兰&北爱尔兰旅行指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .region-section {
+            margin-bottom: 40px;
+        }
+
+        .region-title {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .city-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .city-name {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .attraction {
+            padding: 15px;
+            margin-bottom: 12px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: background 0.3s;
+        }
+
+        .attraction:hover {
+            background: #e9ecef;
+        }
+
+        .attraction-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .attraction-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .got-badge {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        .infp-badge {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #667eea;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #ffc107;
+            font-size: 1em;
+        }
+
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-top: 8px;
+        }
+
+        .tips-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .tips-title {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .tips-title::before {
+            content: '💡';
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .tip-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .tip-item h4 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .tip-item ul {
+            margin-left: 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .city-name {
+                font-size: 1.3em;
+            }
+            
+            .attraction-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍀 爱尔兰 & 北爱尔兰旅行指南</h1>
+            <p>为INFP女友精心规划 · 包含权游拍摄地</p>
+        </div>
+
+        <!-- 北爱尔兰 -->
+        <div class="region-section">
+            <div class="region-title">🏰 北爱尔兰 Northern Ireland</div>
+
+            <div class="city-card">
+                <div class="city-name">📍 贝尔法斯特 Belfast</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🚢 泰坦尼克博物馆</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">互动性强，建筑独特，完整讲述泰坦尼克号从建造到沉没的故事</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🏰 贝尔法斯特城堡</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">位于山上的苏格兰男爵风格城堡，俯瞰整个城市和贝尔法斯特湖，花园里藏着9只猫的雕塑等你寻找</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌿 植物园和阿尔斯特博物馆</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">维多利亚时期的棕榈温室和热带峡谷温室美轮美奂，博物馆收藏从恐龙化石到木乃伊应有尽有，且免费参观</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🎨 和平墙与政治壁画</span>
+                            <span class="rating">⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">见证北爱动荡历史的实体墙，墙面上布满了来自世界各地的和平祈愿，周边街区的政治壁画讲述着天主教与新教社区的故事</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">⛪ 圣安妮大教堂</span>
+                            <span class="rating">⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">现代与古典建筑风格的完美融合，彩色玻璃窗美丽，马赛克地板精致</div>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-name">📍 安特令郡 County Antrim · 巨人之路海岸线 + 权游拍摄地</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌳 黑暗树篱 Dark Hedges</span>
+                            <span class="got-badge">⚔️ 权游</span>
+                            <span class="infp-badge">💚 INFP推荐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">权游"国王大道"取景地。200多年历史的山毛榉形成天然拱门隧道，树枝交织如梦似幻，清晨薄雾中最具超现实美感</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">⬡ 巨人之路 Giant's Causeway</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">世界自然遗产，约4万根六边形玄武岩石柱排列成阶梯延伸入海，传说是巨人为了与苏格兰巨人决斗而建造的堤道</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌉 卡里克索桥</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">横跨30米深峡谷的悬索桥，连接主岛与小岛，脚下是汹涌的海浪，需要一点勇气但风景壮观</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🏰 邓路斯城堡 Dunluce Castle</span>
+                            <span class="got-badge">⚔️ 权游</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">权游"派克城"原型。建在悬崖边缘的中世纪废墟城堡，极具戏剧性，1639年部分厨房因风暴坠入大海，日落时分最震撼</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🕳️ 库什恩登洞穴</span>
+                            <span class="got-badge">⚔️ 权游</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">权游"影子刺客"诞生地。由海浪和天气侵蚀石灰岩形成，神秘而幽暗</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌲 托利莫尔森林公园</span>
+                            <span class="got-badge">⚔️ 权游</span>
+                            <span class="infp-badge">💚 INFP推荐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">权游第一季开场，异鬼出现地。北爱第一个森林公园，童话般的古老森林中有石桥、拱门、河流，建议至少2-3小时徒步</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🏰 城堡区 Castle Ward</span>
+                            <span class="got-badge">⚔️ 权游</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">权游"临冬城"庭院取景地。18世纪庄园建筑一半是哥特式一半是古典式（因为夫妻品味不同），可以体验射箭</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">⛪ 因奇岛 Inch Abbey</span>
+                            <span class="got-badge">⚔️ 权游</span>
+                            <span class="rating">⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">权游"河间地"场景。12世纪修道院遗址，坐落在河边宁静的草地上</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">⚓ 巴林托伊港</span>
+                            <span class="got-badge">⚔️ 权游</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">权游"铁群岛"洛拉斯港。小巧精致的石头港口，周围是黑色岩石和碧绿海水</div>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-name">📍 德里 Derry/Londonderry</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🏛️ 德里古城墙</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">欧洲保存最完整的城墙之一，建于17世纪，全长约1.5公里，可以完整环绕城墙行走，俯瞰整个老城</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌉 和平桥 Peace Bridge</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">2011年建成的现代自行车和步行桥，象征连接天主教与新教社区，横跨福伊尔河的优美曲线桥身</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🏛️ 吉尔德霍尔 Guildhall</span>
+                            <span class="rating">⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">新哥特式维多利亚建筑，以精美的彩色玻璃窗闻名，讲述德里的历史故事，可免费参观</div>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-name">📍 唐郡 County Down</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">⛰️ 缪恩山脉 Mourne Mountains</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">徒步天堂，北爱最高峰所在地，C.S.刘易斯《纳尼亚传奇》的灵感来源，有"缪恩墙"—35公里长的干石墙横跨15座山峰</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌊 斯特兰福德湖</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">英国最大的入海口湖泊，观鸟胜地，可看到海豹、海豚，潮汐变化剧烈</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 爱尔兰共和国 -->
+        <div class="region-section">
+            <div class="region-title">🍀 爱尔兰共和国 Republic of Ireland</div>
+
+            <div class="city-card">
+                <div class="city-name">📍 都柏林 Dublin</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🖼️ 爱尔兰国家美术馆</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">免费参观，收藏从中世纪到现代的欧洲艺术，包括卡拉瓦乔、伦勃朗、莫奈等大师作品，爱尔兰艺术收藏尤为丰富</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🦌 凤凰公园</span>
+                            <span class="infp-badge">💚 INFP推荐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">欧洲最大的城市围墙公园，面积超过纽约中央公园，有约450只野生黑鹿自由漫步，还有总统府、动物园和威灵顿纪念碑</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">📚 圣三一学院老图书馆</span>
+                            <span class="infp-badge">💚 INFP推荐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">藏有9世纪的《凯尔经》手抄本（爱尔兰国宝），65米长的"长廊"有20万册古籍，被誉为世界最美图书馆之一</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🍺 Temple Bar区</span>
+                            <span class="rating">⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">都柏林文化区，鹅卵石街道两旁是彩色建筑、酒吧、餐厅和艺术画廊，周末有艺术市集，热闹但较商业化</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🎨 爱尔兰现代艺术博物馆</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">坐落在17世纪的皇家医院建筑内，展示爱尔兰和国际当代艺术，建筑和花园本身就值得一看，免费参观</div>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-name">📍 高威 Galway</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🎭 拉丁区 Latin Quarter</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">高威的文化心脏，中世纪街道上布满色彩缤纷的小店、咖啡馆、画廊，街头艺人表演不断，充满波西米亚艺术气息</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌅 海滨长廊 Salthill Promenade</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">沿着戈尔韦湾的海滨步道，看日落的绝佳地点，当地人有"踢墙"传统（走到尽头踢一下墙再返回）</div>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-name">📍 戈尔韦郡周边</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🏔️ 康尼马拉国家公园</span>
+                            <span class="infp-badge">💚 INFP推荐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">爱尔兰最狂野的地区，有沼泽、草原、山脉和湖泊，"十二峰"山脉适合徒步，可能遇到康尼马拉小马，孤独而壮美</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌊 天空之路 Sky Road</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">16公里环形海岸自驾路线，从克利夫登出发，一侧是大西洋岛屿和海湾，一侧是荒野山丘，风景壮丽到令人屏息</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">⛵ 基拉里峡湾 Killary Fjord</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">爱尔兰唯一真正的峡湾，长16公里，两侧是陡峭山脉，可以乘船游览或沿岸徒步</div>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-name">📍 克莱尔郡 County Clare</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">⛰️ 莫赫悬崖 Cliffs of Moher</span>
+                            <span class="infp-badge">💚 INFP推荐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">爱尔兰最著名景点！绵延8公里、高214米的悬崖垂直跌入大西洋，震撼壮观，可以看到海鸟栖息，雾天尤其神秘</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🌑 巴伦国家公园 The Burren</span>
+                            <span class="infp-badge">💚 INFP推荐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">独特的喀斯特石灰岩地貌，像月球表面，但春夏季节岩石缝隙中盛开北极、地中海和阿尔卑斯植物，三种气候植物共存的奇观</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🎵 杜林小镇 Doolin</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">爱尔兰传统音乐之乡，小镇酒吧每晚都有现场音乐会，距离莫赫悬崖很近，可以从这里坐船到阿伦群岛</div>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-name">📍 科克郡周边</div>
+                
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">💋 布拉尼城堡 Blarney Castle</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">15世纪城堡，最著名的是"巧言石"（Blarney Stone），传说亲吻这块石头可以获得"能说会道"的天赋，但需要仰躺在城堡顶部才能亲到。城堡花园非常美，有毒药花园、岩石花园和魔法森林</div>
+                </div>
+
+                <div class="attraction">
+                    <div class="attraction-header">
+                        <div>
+                            <span class="attraction-name">🏘️ 金赛尔 Kinsale</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="description">彩色房屋的海滨小镇，被誉为爱尔兰美食之都，艺术画廊和手工艺品店林立，有查尔斯堡和詹姆斯堡两座星形要塞
